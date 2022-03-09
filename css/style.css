@@ -5,7 +5,8 @@
     --color-primary: #4D41C0;
     --white:#fff;
     --text-gray: #4a4a4a;
-    --text-ligth-gray: #aaa
+    --text-ligth-gray: #aaa;
+    --star-yellow: #ffbb3a;
 }
 
 * {
@@ -76,12 +77,15 @@ h1, h2, h3, h4, h5, h6{
     align-items: center;
     padding: 10px 0 20px 0;
     border-radius:  0 0 8px 8px;
+    justify-content: space-between;
+    height: 220px;
 
 }
 .dsmovie-card-description h3{
     margin-bottom: 25px;
     font-size: 14px;
     font-weight: 700;
+    text-align: center;
 }
 .dsmoviebtn, .dsmoviebtn:hover{
     height: 40px;
@@ -114,7 +118,26 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 700;
     margin-bottom: 20px;
 }
+.dsmovie-card-description-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
+.dsmovie-card-description-bottom img{
+    width: 22px;
+}
+.dsmovie-card-description-bottom h4{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--star-yellow);
+}
+.dsmovie-card-description-bottom p{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-ligth-gray);
+    margin-bottom: 10px;
+}
 .dsmovie-form{
     width: 100%;
 }
